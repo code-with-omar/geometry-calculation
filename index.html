@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>geometry Calculation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- user css file -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid  p-5 d-flex flex-md-row flex-column">
+        <div class="row">
+            <div class="col-9">
+                <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 mt-5 me-auto">
+                    <div class="col-4 border border-warning-subtle p-5  mb-5">
+                        <img src="./images/triangle.png" class="img-fluid" alt="" srcset="">
+                        <h4>Triangle</h4>
+                        <p>Area (A) =0.5*b*h</p>
+                        <div class="mb-3 d-flex">
+                            <input id="triangle-base" type="text" class="form-control bg-primary-subtle me-1" name=""
+                                id="" placeholder="b"><label class="text-center mt-1" for="">cm</label>
+                            <input id="triangle-height" type="text" class="form-control bg-primary-subtle mx-1" name=""
+                                id="" placeholder="h"> <label class="text-center mt-1" for="">cm</label>
+                        </div>
+                        <button id="calculate-triangle" class="btn btn-primary w-100">Calculate</button>
+                    </div>
+
+                    <div class="col-4 border border-warning-subtle p-5 mb-5">
+                        <img src="./images/rectangle.png" class="img-fluid" alt="" srcset="">
+                        <h4>Rectangle</h4>
+                        <p>Area (A) =w*l</p>
+                        <div class="mb-3 d-flex">
+                            <input id="rectangle-weight" type="text" class="form-control bg-primary-subtle me-1" name=""
+                                id="" placeholder="w"><label class="text-center mt-1" for="">cm</label>
+                            <input id="rectangle-lenght" type="text" class="form-control bg-primary-subtle mx-1" name=""
+                                id="" placeholder="l"> <label class="text-center mt-1" for="">cm</label>
+                        </div>
+                        <button id="calculate-rectangle" class="btn btn-primary w-100">Calculate</button>
+                    </div>
+
+                    <div class="col-4 border border-warning-subtle p-5 mb-5">
+                        <img src="./images/parallelogram.png" class="img-fluid" alt="" srcset="">
+                        <h4>Parallelogram</h4>
+                        <p>Area (A) =b*h</p>
+                        <p>b=<span id="parallelogram-weight">10</span>cm, h=<span id="parallelogram-height">12</span>cm
+                        </p>
+                        <button id="calculate-parallelogram" class="btn btn-primary w-100">Calculate</button>
+                    </div>
+
+                    <div class="col border border-warning-subtle p-5">
+                        <img src="./images/rhombus.png" class="img-fluid" alt="" srcset="">
+                        <h4>Rhombus</h4>
+                        <p>Area (A) =0.5*d<sub>1</sub>*d<sub>2</sub></p>
+                        <p>d<sub>1</sub>=<span id="rhombus-digonal-one">16</span>cm, d<sub>2</sub>=<span
+                                id="rhombus-digonal-two">8</span>cm</p>
+                        <button id="calculate-rhombus" class="btn btn-primary w-100">Calculate</button>
+                    </div>
+
+                    <div class="col border border-warning-subtle p-5">
+                        <img src="./images/pentagon.png" class="img-fluid" alt="" srcset="">
+                        <h4>Pentagon</h4>
+                        <p>Area (A) =0.5*p*b</p>
+                        <p>p=<span id="pentagon-height">6</span>cm, b=<span id="pentagon-base">10</span>cm</p>
+                        <button id="calculate-pentagon" class="btn btn-primary w-100">Calculate</button>
+                    </div>
+
+                    <div class="col border border-warning-subtle p-5">
+                        <img src="./images/ellipse.png" class="img-fluid" alt="" srcset="">
+                        <h4>Ellipse</h4>
+                        <p>Area (A) =pi*a*b</p>
+                        <p>a=<span id="ellipse-base">10</span>cm, b=<span id="ellipse-weight">4</span>cm</p>
+                        <button id="calculate-ellipse" class="btn btn-primary w-100">Calculate</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="row border border-warning-subtle mt-5 h-auto ">
+                    <h4 class="mb-5 text-center mt-3">Area Calculation</h4>
+                    <!-- <ul id="ul" class="list-group list-group-numbered">
+                        <li class="list-group-item border-0 mb-5">
+                            <span id="display-name" class="me-3">Tringle</span>
+                            <span id="display-value" class="me-3"></span><span class="ms-3">cm</span><sup>2</sup>
+                            <button class="btn btn-primary ms-3">Convert to m<sup>2</sup></button>
+                        </li>
+                    </ul> -->
+                    <div id="calculate-full-area">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- user js  -->
+    <script src="./javascript Files/main.js"></script>
+</body>
+
+</html>
